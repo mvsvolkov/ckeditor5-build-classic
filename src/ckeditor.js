@@ -35,6 +35,7 @@ import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment';
 import Highlight from '@ckeditor/ckeditor5-highlight/src/highlight';
 import Indent from '@ckeditor/ckeditor5-indent/src/indent';
+import Font from '@ckeditor/ckeditor5-font/src/font';
 import PreElement from 'ckeditor5-code-block/src/pre';
 
 
@@ -70,6 +71,7 @@ ClassicEditor.builtinPlugins = [
 	Alignment,
 	Highlight,
 	Indent,
+	Font,
 	PreElement
 ];
 
@@ -84,6 +86,8 @@ ClassicEditor.defaultConfig = {
 			'|',
 			'bold', 'italic', 'underline', 'strikeThrough', 'subScript', 'superScript',
 			'highlight',
+			'|',
+			'fontSize', 'fontFamily', 'fontColor', 'fontBackgroundColor',
 			'|',
 			'link',
 			'imageUpload',
